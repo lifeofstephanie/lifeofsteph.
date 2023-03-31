@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Summary Component</title>
+    <style>
+      .pack {
+        display: flex;
+        width: 600px;
+        height: 380px;
+        align-self: center;
+        gap: 30px;
+      }
+      .bluepack {
+        background-color: blue;
+        text-align: center;
+        width: 50%;
+        border-radius: 20px;
+        color: white;
+        width: 250px;
+      }
+      .circle {
+        background-color: purple;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        color: white;
+        margin: 70px 0 0 70px;
+        text-align: center;
+        padding-top: 5px;
+      }
+      .whitepack {
+        border-radius: 0 20px 20px 0;
+        box-shadow: 20px 20px 20px grey;
+        width: 250px;
+      }
+
+      .row {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: black;
+        display: flex;
+      }
+      .continue {
+        width: 200px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: darkblue;
+        text-align: center;
+        color: white;
+      }
+      .continue:hover {
+        background-color: blue;
+        cursor: pointer;
+      }
+      .continue h3:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pack">
+      <div class="bluepack">
+        <p>Your Result</p>
+        <div class="circle">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <h3>Great</h3>
+        <p>
+          You scored higher than 65% of the people who have taken these tests
+        </p>
+      </div>
+      <div class="whitepack">
+        <h4 style="color: black">Summary</h4>
+        <div
+          class="row"
+          style="background-color: rgba(240, 36, 36, 0.295); color: red"
+        >
+          <img src="icon-reaction.svg" alt="" />
+          <p>Reaction</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p><b>80</b>/100</p>
+        </div>
+        <br />
+        <div
+          class="row"
+          style="background-color: rgba(240, 237, 36, 0.171); color: yellow"
+        >
+          <img src="icon-memory.svg" alt="" />
+          <p>Memory</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p><b>92</b>/100</p>
+        </div>
+        <br />
+        <div
+          class="row"
+          style="background-color: rgba(70, 240, 36, 0.205); color: green"
+        >
+          <img src="icon-verbal.svg" alt="" />
+          <p>Verbal</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p><b>61</b>/100</p>
+        </div>
+        <br />
+        <div
+          class="row"
+          style="background-color: rgba(240, 36, 240, 0.205); color: blueviolet"
+        >
+          <img src="icon-visual.svg" alt="" />
+          <p>Visual</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p><b>72</b>/100</p>
+        </div>
+        <br />
+        <div class="continue">
+          <h3>continue</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
